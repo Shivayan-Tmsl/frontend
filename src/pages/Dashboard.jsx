@@ -155,7 +155,7 @@ const Dashboard = () => {
 
           {/* Expenses */}
           <div className='bg-white shadow-md p-12 rounded-xl flex flex-col aspect-square'>
-            <p className='text-md font-bold flex gap-72'>Expenses <span className='flex items-center justify-center gap-2 bg-gray-50 shadow-md  rounded-xl p-1' onClick={()=>{navigate("/income")}}>See more <LuArrowRight /></span></p>
+            <p className='text-md font-bold flex gap-72'>Expenses <span className='flex items-center justify-center gap-2 bg-gray-50 shadow-md  rounded-xl p-1' onClick={()=>{navigate("/expense")}}>See more <LuArrowRight /></span></p>
             {dashboardData?.last60DaysExpenses.transactions?.length>0 ? (
               <div className='flex flex-col gap-5 mt-4'>
                 {dashboardData?.last60DaysExpenses.transactions.slice(0, 5).map((item, index) => (
